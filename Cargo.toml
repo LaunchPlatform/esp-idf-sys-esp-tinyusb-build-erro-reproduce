@@ -21,10 +21,10 @@ opt-level = "z"
 default = []
 
 [dependencies]
-esp-idf-sys = "0.35.0"
+esp-idf-sys = "0.36.0"
 
 [build-dependencies]
-embuild = "0.32.0"
+embuild = { version = "0.33", features = ["glob", "kconfig", "cmake", "espidf"] }
 
 [package.metadata.esp-idf-sys]
 esp_idf_version = "v5.2.2"
@@ -34,6 +34,4 @@ remote_component = { name = "espressif/esp_tinyusb", version = "1.5.0" }
 
 [patch.crates-io]
 embuild = { git = "https://github.com/esp-rs/embuild" }
-esp-idf-svc = { git = "https://github.com/esp-rs/esp-idf-svc" }
-esp-idf-hal = { git = "https://github.com/esp-rs/esp-idf-hal" }
-esp-idf-sys = { git = "https://github.com/esp-rs/esp-idf-sys", rev = "0bbcaab65ca1c199d21182a659184ae055cdd03d" }
+esp-idf-sys = { git = "https://github.com/esp-rs/esp-idf-sys" }

@@ -1,6 +1,4 @@
-use esp_idf_sys::esp_tinyusb::{
-    tinyusb_config_t, tinyusb_driver_install, tinyusb_msc_storage_mount,
-};
+use esp_idf_sys::{tinyusb_config_t, tinyusb_driver_install, tinyusb_msc_storage_mount};
 use std::ffi::CString;
 
 fn main() {
