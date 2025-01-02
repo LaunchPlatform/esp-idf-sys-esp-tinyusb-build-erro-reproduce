@@ -36,4 +36,4 @@ remote_component = { name = "espressif/esp_tinyusb", version = "1.5.0" }
 embuild = { git = "https://github.com/esp-rs/embuild" }
 esp-idf-svc = { git = "https://github.com/esp-rs/esp-idf-svc" }
 esp-idf-hal = { git = "https://github.com/esp-rs/esp-idf-hal" }
-esp-idf-sys = { git = "https://github.com/esp-rs/esp-idf-sys", rev = "ecf45d1b7f8c9acc8c55dbdd9b105c7ac51d8525" }
+esp-idf-sys = { git = "https://github.com/esp-rs/esp-idf-sys", rev = "0bbcaab65ca1c199d21182a659184ae055cdd03d" }
