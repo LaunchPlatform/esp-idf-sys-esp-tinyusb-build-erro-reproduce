@@ -1,0 +1,38 @@
+dependencies:
+  espressif/esp_tinyusb:
+    component_hash: bc5d507e2f17914cb856e6e1c791ecd93d6ed24805d7246b05da2a0ef88cea5a
+    dependencies:
+    - name: idf
+      version: '>=5.0'
+    - git: git@github.com:LaunchPlatform/tinyusb.git
+      name: tinyusb
+      public: true
+      version: 3185412e65fbd43fa9530413f183878a47507a6b
+    source:
+      git: file:///C:\Users\Fang-Pen\workspace\playground\esp-usb
+      path: device/esp_tinyusb
+      type: git
+    version: d12a63302a53d7fbf9f6a01725b79d82b62722ff
+  idf:
+    source:
+      type: idf
+    version: 5.2.2
+  tinyusb:
+    component_hash: 6c8ee84b97138307ba2730ccdcdb9ffd410360e8a970412e720b39fe3e390289
+    dependencies:
+    - name: idf
+      version: '>=5.0'
+    source:
+      git: git@github.com:LaunchPlatform/tinyusb.git
+      path: .
+      type: git
+    targets:
+    - esp32s2
+    - esp32s3
+    - esp32p4
+    version: 3185412e65fbd43fa9530413f183878a47507a6b
+direct_dependencies:
+- espressif/esp_tinyusb
+manifest_hash: 36469727c3a8683ade0fbbba37551e1f1a3e52e27882fa0a6d359409aaeac406
+target: esp32s3
+version: 2.0.0

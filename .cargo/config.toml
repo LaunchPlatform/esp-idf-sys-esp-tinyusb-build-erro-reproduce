@@ -1,0 +1,14 @@
+[build]
+target = "xtensa-esp32s3-espidf"
+rustflags = "--cfg espidf_time64"
+
+[target.xtensa-esp32s3-espidf]
+runner = "espflash flash --monitor"
+linker = "ldproxy"
+
+[unstable]
+build-std = ["std", "panic_abort"]
+
+[env]
+# Workaround for https://github.com/esp-rs/esp-idf-template/issues/174
+CRATE_CC_NO_DEFAULTS = "1"
